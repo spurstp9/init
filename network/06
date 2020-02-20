@@ -1,0 +1,2 @@
+#Pour trouver l'adresse IP du serveur DNS utilisé il faut aller voir le fichier
+/etc/resolv.conf
