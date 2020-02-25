@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh agardina@10.12.1.142

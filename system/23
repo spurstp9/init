@@ -1,0 +1,6 @@
+En session graphique : il faut se déconnecter de la session actuelle, puis
+choisir dans la liste des utilisateurs l'utilisateur récemment ajouté, et entrer
+son mot de passe.
+
+En session ssh : il faut lancer la commande su nom_utilisateur puis entrer le
+mot de passe de celui-ci.

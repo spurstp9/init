@@ -1,0 +1,7 @@
+#sh 12 | nslookup
+
+Server:		10.51.1.42
+Address:	10.51.1.42#53
+
+1.1.12.10.in-addr.arpa	name = e2r1p1.42.fr.
+
