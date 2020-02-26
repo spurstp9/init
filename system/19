@@ -1,0 +1,37 @@
+Ce type de service est appelé daemon.
+
+Pour en afficher la liste il faut lance la commande ls -l /etc/init.d | awk
+{'print $9'}
+
+alsa-utils
+anacron
+apparmor
+avahi-daemon
+bluetooth
+console-setup.sh
+cron
+cups
+cups-browsed
+dbus
+exim4
+gdomap
+haveged
+hwclock.sh
+keyboard-setup.sh
+kmod
+networking
+network-manager
+plymouth
+plymouth-log
+pppd-dns
+procps
+rsync
+rsyslog
+saned
+sddm
+speech-dispatcher
+ssh
+sudo
+udev
+unattended-upgrades
+x11-common

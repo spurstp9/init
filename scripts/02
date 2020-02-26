@@ -1,4 +1,19 @@
 #!/bin/bash
+# Delete a logged in user
+# usage: 02 user_name
 
-sudo pkill -u -9 $1
-sudo userdel -r $1
+if (( $# != 1 )) ; then
+	echo "usage: bash $0 user_name"
+	exit 1
+fi
+
+id "$1" &> /dev/null
+
+if (( $? != 0 )) ; then
+		echo "The user $1 doesn't exist"
+		exit 1
+fi
+
+sudo pkill -u -9 $1 &> /dev/null
+sudo userdel -r $1 &> /dev/null
+echo "The user $1 has been deleted"

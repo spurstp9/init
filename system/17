@@ -1,3 +1,1 @@
-#!/bin/bash
-
-ssh agardina@10.12.1.142
+ssh user_name@host_ip_address
