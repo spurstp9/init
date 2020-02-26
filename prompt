@@ -1,0 +1,7 @@
+[master e8f4beb] Suppression des fichiers test
+ 5 files changed, 4 deletions(-)
+ delete mode 100644 g
+ delete mode 100644 prompt
+ delete mode 100644 test
+ delete mode 100644 test2
+ delete mode 100644 y
