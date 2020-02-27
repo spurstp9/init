@@ -1,1 +1,1 @@
-sudo useradd newuser
+sudo useradd [options] newuser
