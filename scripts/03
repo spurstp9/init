@@ -17,18 +17,24 @@ fi
 
 # Check if the directory is a git repository
 
-if ! ls -a $1 | grep ".git" > /dev/null ; then
+cd "$1"
+git rev-parse --is-inside-work-tree &> /dev/null
+if (( $? != 0 )) ; then
 	echo "The directory is not a Git repository"
 	exit 1
 fi
 
-# Git commands
+# Check if git add or git commit needs to be used 
 
-cd "$1"
+prompt=$(git status --porcelain)
+if [[ $prompt != "" ]] ; then
+	git add -A
+	read -p "Please enter the commit message : " message
+	git commit -am "$message"
+else
+	echo "Nothing to add or commit"
+fi
 
-git add -A
-
-read -p "Please enter the commit message : " message
-git commit -am "$message"
+# Git push
 
 git push origin master
