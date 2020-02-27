@@ -2,10 +2,14 @@
 # Delete a logged in user
 # usage: 02 user_name
 
+# Check the number of arguments
+
 if (( $# != 1 )) ; then
 	echo "usage: bash $0 user_name"
 	exit 1
 fi
+
+# The id command displays some info about the user (UID, GID). If the user doesn't exist it will return a value different from 0
 
 id "$1" &> /dev/null
 

@@ -1,6 +1,6 @@
 Ce type de service est appelé daemon.
 
-Pour en afficher la liste il faut lance la commande ls -l /etc/init.d | awk
+Pour en afficher la liste il faut lancer la commande ls -l /etc/init.d | awk
 {'print $9'}
 
 alsa-utils

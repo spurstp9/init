@@ -1,2 +1,2 @@
 Le fichier contenant les clés RSA des machines autorisées à se connecter via SSH
-est : .ssh/authorized_keys.
+est : ~/.ssh/authorized_keys.

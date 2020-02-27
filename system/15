@@ -1,1 +1,3 @@
-kill -9 %%
+# To find job number use the jobs command
+
+kill -9 <job number>
